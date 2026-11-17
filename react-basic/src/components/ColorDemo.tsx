@@ -1,4 +1,10 @@
 import { color } from '../data/demo'
+import '../css/index.css'
+
+const style = {
+  color: 'blue',
+  fontSize: '20px'
+}
 
 function ColorDemo() {
   if (color === 0) {
@@ -6,10 +12,10 @@ function ColorDemo() {
   }
 
   if (color === 1) {
-    return <div style={{ color: 'blue' }}>blue</div>
+    return <div style={style}>blue</div>
   }
 
-  return <div style={{ color: 'pink' }}>pink</div>
+  return <span className='foo'>this is class foo</span>
 }
 
 export default ColorDemo

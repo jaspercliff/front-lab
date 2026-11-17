@@ -2,6 +2,11 @@ import ListDemo from './components/ListDemo'
 import ConditionalDemo from './components/ConditionalDemo'
 import JsExpressionDemo from './components/jsExpressionDemo'
 import ColorDemo from './components/ColorDemo'
+import Toolbar from './components/Toolbar'
+import EventBind from './components/Eventbind'
+import Counter from './components/Counter'
+
+
 
 function App() {
   return (
@@ -12,7 +17,14 @@ function App() {
       <ListDemo />
       <ConditionalDemo />
       <ColorDemo />
+      <EventBind />
+      <Counter />
+      <Toolbar
+        onPlayMovie={() => alert('Playing!')}
+        onUploadImage={() => alert('Uploading!')}
+      />
     </div>
+
   )
 }
 
