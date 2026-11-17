@@ -3,8 +3,8 @@ import ConditionalDemo from './components/ConditionalDemo'
 import JsExpressionDemo from './components/jsExpressionDemo'
 import ColorDemo from './components/ColorDemo'
 import Toolbar from './components/Toolbar'
-import EventBind from './components/Eventbind'
 import Counter from './components/Counter'
+import EventBind from './components/EventBind'
 
 
 
