@@ -2,6 +2,7 @@ function getName() {
   return 'jasper'
 }
 
+// React 组件是返回标签的 JavaScript 函数
 function JsExpressionDemo() {
   return (
     <div>

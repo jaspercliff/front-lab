@@ -1,4 +1,4 @@
-import { list } from '../data/demo'
+import { list } from '../../data/demo'
 
 function ListDemo() {
   return (

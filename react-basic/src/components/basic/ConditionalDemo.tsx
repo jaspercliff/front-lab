@@ -1,4 +1,4 @@
-import { isLogin, isLoading } from '../data/demo'
+import { isLogin, isLoading } from '../../data/demo'
 
 function ConditionalDemo() {
   return (

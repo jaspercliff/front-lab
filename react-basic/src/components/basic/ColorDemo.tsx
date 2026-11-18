@@ -1,5 +1,5 @@
-import { color } from '../data/demo'
-import '../css/index.css'
+import { color } from '../../data/demo'
+import '../../css/index.css'
 
 const style = {
   color: 'blue',
