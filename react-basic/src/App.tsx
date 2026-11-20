@@ -9,6 +9,7 @@ import Toolbar from './components/basic/Toolbar'
 import Profile from './components/official/Profile'
 import ShoppingList from './components/official/ShoppingList'
 import MyButton from './components/official/MyButton'
+import Chess from './components/chess/Chess'
 
 
 
@@ -21,29 +22,41 @@ function App() {
 
   return (
     <div>
-      <div>
-        <h1>React Basic</h1>
+      {
+        false && (
+          <div>
+            <h1>React Basic</h1>
 
-        <JsExpressionDemo />
-        <ListDemo />
-        <ConditionalDemo />
-        <ColorDemo />
-        <EventBind />
-        <Counter />
-        <Toolbar
-          onPlayMovie={() => alert('Playing!')}
-          onUploadImage={() => alert('Uploading!')}
-        />
-        <Profile />
-        <ShoppingList />
-      </div>
+            <JsExpressionDemo />
+            <ListDemo />
+            <ConditionalDemo />
+            <ColorDemo />
+            <EventBind />
+            <Counter />
+            <Toolbar
+              onPlayMovie={() => alert('Playing!')}
+              onUploadImage={() => alert('Uploading!')}
+            />
+            <Profile />
+            <ShoppingList />
+          </div>
+        )
+      }
 
       {/* 组件 共享数据并一起更新 */}
       {/* props: 将 App 中的点击事件处理函数以及 state 一同向下传递到 每个 MyButton 中。你可以使用 JSX 的大括号向 MyButton 传递信息 */}
+      {
+        false && (
+          <div>
+            <h1>共同更新的计数器</h1>
+            <MyButton count={count} onClick={handleClick} />
+            <MyButton count={count} onClick={handleClick} />
+          </div>
+        )
+      }
+
       <div>
-        <h1>共同更新的计数器</h1>
-        <MyButton count={count} onClick={handleClick} />
-        <MyButton count={count} onClick={handleClick} />
+        <Chess />
       </div>
     </div>
 

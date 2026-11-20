@@ -1,3 +1,4 @@
+// 接收props
 function MyButton({ count, onClick }) {
   return (
     <button onClick={onClick}>
@@ -6,3 +7,4 @@ function MyButton({ count, onClick }) {
   );
 }
 export default MyButton
+
