@@ -157,3 +157,9 @@ function add(a: number, b: number) {
 }
 
 console.log(add(1, 2));
+
+const add1 = (a: number, b: number): number => {
+  return a + b
+}
+
+add1(2, 3)

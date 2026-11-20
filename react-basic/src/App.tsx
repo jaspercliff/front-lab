@@ -9,7 +9,7 @@ import Toolbar from './components/basic/Toolbar'
 import Profile from './components/official/Profile'
 import ShoppingList from './components/official/ShoppingList'
 import MyButton from './components/official/MyButton'
-import Chess from './components/chess/Chess'
+import Game from './components/chess/Chess'
 
 
 
@@ -56,7 +56,7 @@ function App() {
       }
 
       <div>
-        <Chess />
+        <Game />
       </div>
     </div>
 
