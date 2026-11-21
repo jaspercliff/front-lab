@@ -1,0 +1,48 @@
+<table>
+  <!-- 使用 thead、tbody、tfoot 对表格进行分组。 -->
+  <thead>
+    <!-- row -->
+    <tr>
+      <!-- header -->
+      <th>name</th>
+      <th>age</th>
+      <th>sex</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <!-- cell -->
+      <td rowspan="2">jasper</td>
+      <td>20</td>
+      <td>female</td>
+    </tr>
+
+    <tr>
+      <td>22</td>
+      <td>male</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <!-- 横向合并 -->
+      <td colspan="2">total:2</td>
+    </tr>
+
+  </tfoot>
+
+</table>
+
+<style>
+  table {
+    border: 1px solid black;
+    /* 将相邻边框合并成一条线 */
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+  }
+</style>
