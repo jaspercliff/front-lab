@@ -10,6 +10,7 @@ import Profile from './components/official/Profile'
 import ShoppingList from './components/official/ShoppingList'
 import MyButton from './components/official/MyButton'
 import Game from './components/chess/Chess'
+import FilterableProductTable from './components/official/FilterableProductTable'
 
 
 
@@ -56,7 +57,13 @@ function App() {
       }
 
       <div>
-        <Game />
+        {
+          false && <Game />
+        }
+      </div>
+
+      <div>
+        <FilterableProductTable />
       </div>
     </div>
 
