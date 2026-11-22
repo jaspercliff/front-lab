@@ -11,6 +11,7 @@ import ShoppingList from './components/official/ShoppingList'
 import MyButton from './components/official/MyButton'
 import Game from './components/chess/Chess'
 import FilterableProductTable from './components/official/FilterableProductTable'
+import UserCardComponent from './components/foundation/props/UserCard'
 
 
 
@@ -63,7 +64,18 @@ function App() {
       </div>
 
       <div>
-        <FilterableProductTable />
+        {
+          false &&
+          <FilterableProductTable />
+        }
+      </div>
+
+      <div>
+        {
+          true &&
+          <UserCardComponent />
+        }
+
       </div>
     </div>
 
