@@ -33,34 +33,6 @@ const user: {
 
 console.log("object", user);
 
-// interface 
-
-interface Props {
-  name: string,
-  age: number
-}
-
-const receive: Props = {
-  name: 'jasper',
-  // Property 'age' is missing in type '{ name: string; }' but required in type 'props'. ts (2741) [39, 7]
-  age: 20
-}
-
-console.log("interface", receive);
-
-
-// ? 可选
-
-interface Person {
-  name: string,
-  age?: number
-}
-
-const person: Person = {
-  name: 'jasper'
-}
-
-console.log("?", person);
 
 // 联合类型 ｜ 表示一个变量可以是多种类型之一。
 
@@ -73,15 +45,6 @@ id = '100'
 // id = true
 console.log("|", id);
 
-// 联合类型 和字面量 
-
-type Status = 'success' | 'error'
-
-let status: Status = 'success'
-
-// Type '"loading"' is not assignable to type 'Status'. ts (2322) [78, 5]
-// let status: Status = 'loading'
-console.log(status);
 
 // tuple 元组可以规定数组的长度，以及每个位置的数据类型
 
@@ -119,38 +82,6 @@ enum Direction {
 const val2: Direction = Direction.up
 console.log('enum(recommand 联合变量）', val2);
 
-
-// type 可以给类型起名字 也可以定义对象 联合类型
-
-type CustomType = number
-
-const id1: CustomType = 100
-
-console.log(id1);
-
-
-type Project = {
-  id: number,
-  name: string
-}
-
-let project: Project = { id: 1, name: 'jasper' }
-console.log(project);
-
-// readonly 
-
-interface User1 {
-  readonly id: number
-  name: string
-}
-
-const user2: User1 = {
-  id: 1,
-  name: 'Jasper',
-}
-
-// user2.id = 3
-console.log(user2);
 
 function add(a: number, b: number) {
   return a + b
