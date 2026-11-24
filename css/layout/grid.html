@@ -1,0 +1,33 @@
+<h1>grid layout</h1>
+
+<div class="container">
+  <div class="item1">1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+</div>
+
+<style>
+  /* Grid 是二维布局，同时控制行（Row）和列（Column） */
+  div {
+    margin: 10px;
+
+    background-color: lightblue;
+  }
+
+  .container {
+    background-color: lightsalmon;
+    display: grid;
+    /* fr 表示可分配的剩余空间比例 */
+    grid-template-columns: repeat(3, 1fr);
+    /* 2 行，每行高度 100px */
+    grid-template-rows: 100px 100px;
+    gap: 20px
+  }
+
+  .item1 {
+    /* 占俩列 */
+    grid-column: span 2;
+  }
+</style>

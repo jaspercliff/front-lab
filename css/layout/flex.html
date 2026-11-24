@@ -1,0 +1,83 @@
+<div class="container">
+
+  <div class="inner">div 1</div>
+  <div class="inner">div 2</div>
+  <div class="inner">div 3</div>
+  <div class="inner">div 4</div>
+</div>
+
+<div class="container1">
+
+  <div class="inner">div 1</div>
+  <div class="inner">div 2</div>
+  <div class="inner">div 3</div>
+  <div class="item">div 4</div>
+</div>
+
+<div class="container2">
+  <div class="left">左侧</div>
+  <div class="middle">中间</div>
+  <div class="right">右侧</div>
+</div>
+
+<style>
+  .inner {
+    /* 但普通 Flex 布局默认不会因为空间不足自动换行。 */
+    /* 它可能会发生 Flex Shrink（缩小） */
+    width: 600px;
+    background: antiquewhite;
+    margin: 20px
+  }
+
+  /* flex 处理一维布局 横竖
+    主轴：水平（从左到右）
+    交叉轴：垂直（从上到下） */
+  .container {
+    height: 300px;
+    background-color: aquamarine;
+    display: flex;
+    /* 主轴row row-reverse,column 竖向 */
+    flex-direction: row;
+    /* 控制主轴方向上的对齐方式 */
+    justify-content: center;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    /* 两端对齐，元素间均匀分布 */
+    justify-content: space-between;
+    /* 元素周围均匀分布空间 每个元素的左右两侧各分配相同的空间 但因为相邻元素之间，两边的空间会叠加 */
+    justify-content: space-around;
+    /* 所有间距完全相等 */
+    justify-content: space-evenly;
+    /* 子元素在交叉轴方向上，尽可能拉伸，填满容器(子元素没有设置高度) */
+    align-items: stretch;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    /*  让不同元素内部文字的基线对齐，而不是让元素顶部或底部对齐 */
+    align-items: baseline;
+    gap: 5px;
+  }
+
+  .container2 {
+    display: flex;
+    height: 200px;
+  }
+
+  .left {
+    width: 100px;
+    background: lightblue;
+  }
+
+  .middle {
+    /* 让这个 Flex 子元素尽可能占据剩余的空间 */
+    flex: 1;
+    background: lightgreen;
+  }
+
+  .right {
+    width: 100px;
+    background: lightsalmon;
+  }
+</style>
